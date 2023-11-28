@@ -2,7 +2,7 @@
 
 ## Overview
 
-Within this assignment, a lambda expression named `displayFileNotFound` has been incorporated in the `Reader.cpp` file. The objective of this lambda expression is to deliver a message indicating the absence of the specified file.
+Within this assignment, a lambda expression named `displayFileNotFound` has been incorporated in the `Reader.cpp` and `Writer.cpp` file. The objective of this lambda expression is to deliver a message indicating the absence of the specified file.
 
 ## Implementation Steps
 
