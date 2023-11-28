@@ -7,7 +7,7 @@
 
 int main()
 {
-    //Declearartion of Deque which store the objects of Triangle class
+    //Declearartion of list which store the objects of Triangle class
     std::list<Triangle> triangles;
 
     //Reading the file and storing the Triangles into vector
@@ -16,7 +16,7 @@ int main()
 
     Triangulation triangulation(triangles);
 
-    //Writing the data into the file from deque of Triangles using object of Writer class
+    //Writing the data into the file from list of Triangles using object of Writer class
     Writer writer;
     std::list<Triangle> outTriangles=triangulation.getTriangles();
     writer.write("output.txt", outTriangles);
