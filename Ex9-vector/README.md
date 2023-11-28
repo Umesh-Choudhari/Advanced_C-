@@ -13,7 +13,7 @@ This assignment involves use of sequential containers such as list, vector and d
        std::vector<Triangle> mTriangles;
    ```
    - Similarly getPoints() method in `/src/Reader.cpp` file also stores Point3D in the file in the vector of points.
-   `void Reader::getPoints(std::list<Point3D> &points)`
+   `void Reader::getPoints(std::vector<Point3D> &points)`
    - In `/src/Writer.cpp` file `void Writer::write(std::string filePath ,std::vector<Triangle>& triangles)`
    function writes Points in the file given as an argument.
  
