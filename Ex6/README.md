@@ -2,9 +2,6 @@
 
 ## Overview
 
-In this assignment, a lambda expression named `displayFileNotFound` has been implemented in the `Reader.cpp` file with capture clause and `mutable` keyword.The purpose of this lambda expression is to provide a message indicating that the file was not found.
-
-
 Within the context of this assignment, there exists a lambda expression named `displayFileNotFound` in the `Reader.cpp` and `Writer.cpp` file. Notably, this lambda expression incorporates a capture clause and utilizes the `mutable` keyword. Its fundamental purpose is to articulate a message that denotes the absence of the designated file.
 
 ## Implementation Steps
