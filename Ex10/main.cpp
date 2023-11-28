@@ -16,7 +16,7 @@ int main()
 
     Triangulation triangulation(triangles);
 
-    //Writing the data into the file from vector of Triangles using object of Writer class
+    //Writing the data into the file from deque of Triangles using object of Writer class
     Writer writer;
     std::deque<Triangle> outTriangles=triangulation.getTriangles();
     writer.write("output.txt", outTriangles);
