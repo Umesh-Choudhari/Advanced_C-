@@ -7,7 +7,7 @@
 
 int main()
 {
-    //Declearartion of deque which store the objects of Triangle class
+    //Declearartion of vector which store the objects of Triangle class
     std::vector<Triangle> triangles;
 
     //Reading the file and storing the Triangles into vector
