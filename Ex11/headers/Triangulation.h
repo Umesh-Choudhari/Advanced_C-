@@ -12,13 +12,13 @@ public:
     ~Triangulation();
 
     std::vector<Triangle> getTriangles();
-    std::map<Triangle, double> getArea();
+    std::multimap<Triangle, double> getArea();
     void printArea();
 
 
 private:
     std::vector<Triangle> mTriangles;
-    std::map<Triangle, double> tArea;
+    std::multimap<Triangle, double> tArea;
     BBox mBBox;
 
     void setArea();
