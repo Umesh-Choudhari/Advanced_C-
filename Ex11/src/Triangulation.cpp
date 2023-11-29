@@ -26,7 +26,7 @@ std::vector<Triangle> Triangulation::getTriangles()
     return mTriangles;
 }
 
-std::map<Triangle, double> Triangulation::getArea()
+std::multimap<Triangle, double> Triangulation::getArea()
 {
     return tArea;
 }
@@ -38,6 +38,11 @@ void Triangulation::printTriangle(Triangle triangle)
     std::cout <<"("<< triangle.p3().x() << "," << triangle.p3().y() << ","<< triangle.p3().z() <<")" << std::endl;
 }
 
+bool operator<(const Triangle& other, const Triangle& other1)
+{
+    return true;
+}
+
 void Triangulation::printArea()
 {
     setArea();
@@ -46,7 +51,7 @@ void Triangulation::printArea()
     {
         std::cout << "[ Triangle-" << i << std::endl;
         printTriangle(pair.first);
-        std::cout <<"Perimeter-"<<pair.second<<" ]"<<std::endl;
+        std::cout <<"Area-"<<pair.second<<" ]"<<std::endl;
         i++;
     }
 }
